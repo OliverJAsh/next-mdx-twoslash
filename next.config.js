@@ -1,7 +1,8 @@
+const remarkShikiTwoslash = require("remark-shiki-twoslash");
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [],
+    remarkPlugins: [[remarkShikiTwoslash.default]],
     rehypePlugins: [],
   },
 });
