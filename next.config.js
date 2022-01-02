@@ -8,5 +8,5 @@ const withMDX = require("@next/mdx")({
 /** @type {import('next').NextConfig} */
 module.exports = withMDX({
     reactStrictMode: true,
-    pageExtensions: ["js", "jsx", "md", "mdx"],
+    pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 });
